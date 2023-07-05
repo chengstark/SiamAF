@@ -1,0 +1,83 @@
+PPG FULL DATASET
+[('simsiam', 'deepmi'), ('simsiam', 'deepbeat_baseline'), ('simsiam', 'ppg_only_baseline'), ('deepmi', 'deepbeat_baseline'), ('deepmi', 'ppg_only_baseline'), ('deepbeat_baseline', 'ppg_only_baseline')]
+---------------------------------------------------------------
+---------------------------------------------------------------
+data_simband_ppg_2400
+('simsiam', 'deepmi'): p_auroc=0.0 , p_auprc=9.127480280470798e-194
+('simsiam', 'deepbeat_baseline'): p_auroc=0.0 , p_auprc=0.0
+('simsiam', 'ppg_only_baseline'): p_auroc=0.0 , p_auprc=7.441164401512137e-294
+('deepmi', 'deepbeat_baseline'): p_auroc=0.0 , p_auprc=7.376168594182096e-229
+('deepmi', 'ppg_only_baseline'): p_auroc=0.0 , p_auprc=6.318410264803836e-60
+('deepbeat_baseline', 'ppg_only_baseline'): p_auroc=2.8739107885942293e-132 , p_auprc=1.861076800142062e-189
+---------------------------------------------------------------
+---------------------------------------------------------------
+data_ucla_ppg_2400
+('simsiam', 'deepmi'): p_auroc=0.0 , p_auprc=2.1512358932614873e-37
+('simsiam', 'deepbeat_baseline'): p_auroc=0.0 , p_auprc=1.5087805678964306e-307
+('simsiam', 'ppg_only_baseline'): p_auroc=0.0 , p_auprc=6.438839407439185e-23
+('deepmi', 'deepbeat_baseline'): p_auroc=0.0 , p_auprc=3.391721131538456e-300
+('deepmi', 'ppg_only_baseline'): p_auroc=0.0 , p_auprc=8.041028403127641e-114
+('deepbeat_baseline', 'ppg_only_baseline'): p_auroc=0.0 , p_auprc=9.330772348591663e-290
+---------------------------------------------------------------
+data_staford_2400
+('simsiam', 'deepmi'): p_auroc=0.0 , p_auprc=0.0
+('simsiam', 'deepbeat_baseline'): p_auroc=0.0 , p_auprc=0.04602517483857248
+('simsiam', 'ppg_only_baseline'): p_auroc=0.0 , p_auprc=0.0
+('deepmi', 'deepbeat_baseline'): p_auroc=0.0 , p_auprc=0.0
+('deepmi', 'ppg_only_baseline'): p_auroc=1.4200025135323397e-292 , p_auprc=0.0
+('deepbeat_baseline', 'ppg_only_baseline'): p_auroc=0.0 , p_auprc=0.0
+ECG DATASETS FULL
+[('simsiam', 'deepmi'), ('simsiam', 'ecg_only_baseline'), ('deepmi', 'ecg_only_baseline')]
+---------------------------------------------------------------
+data_simband_ecg_2400
+('simsiam', 'deepmi')
+('simsiam', 'deepmi'): p_auroc=0.0 , p_auprc=0.0
+('simsiam', 'ecg_only_baseline')
+('simsiam', 'ecg_only_baseline'): p_auroc=0.0 , p_auprc=0.0
+('deepmi', 'ecg_only_baseline')
+('deepmi', 'ecg_only_baseline'): p_auroc=3.1793425790012124e-16 , p_auprc=0.0
+---------------------------------------------------------------
+---------------------------------------------------------------
+data_ucla_ecg_2400
+('simsiam', 'deepmi')
+('simsiam', 'deepmi'): p_auroc=0.0 , p_auprc=4.0864597254483e-98
+('simsiam', 'ecg_only_baseline')
+('simsiam', 'ecg_only_baseline'): p_auroc=0.0 , p_auprc=1.9704262934622083e-216
+('deepmi', 'ecg_only_baseline')
+('deepmi', 'ecg_only_baseline'): p_auroc=0.0 , p_auprc=1.0927738265027907e-152
+---------------------------------------------------------------
+---------------------------------------------------------------
+PPG LIMITED
+[('simsiam_limited_labeled', 'deepmi_limited_labels'), ('simsiam_limited_labeled', 'ppg_only_baseline_limited_labeled'), ('deepmi_limited_labels', 'ppg_only_baseline_limited_labeled')]
+---------------------------------------------------------------
+---------------------------------------------------------------
+data_simband_ppg_2400
+('simsiam_limited_labeled', 'deepmi_limited_labels'): p_auroc=0.0 , p_auprc=0.0
+('simsiam_limited_labeled', 'ppg_only_baseline_limited_labeled'): p_auroc=0.0 , p_auprc=0.0
+('deepmi_limited_labels', 'ppg_only_baseline_limited_labeled'): p_auroc=0.0 , p_auprc=0.0
+---------------------------------------------------------------
+---------------------------------------------------------------
+data_ucla_ppg_2400
+('simsiam_limited_labeled', 'deepmi_limited_labels'): p_auroc=0.0 , p_auprc=0.0
+('simsiam_limited_labeled', 'ppg_only_baseline_limited_labeled'): p_auroc=0.0 , p_auprc=0.0
+('deepmi_limited_labels', 'ppg_only_baseline_limited_labeled'): p_auroc=0.0 , p_auprc=1.498401147377185e-169
+---------------------------------------------------------------
+data_staford_2400
+('simsiam_limited_labeled', 'deepmi_limited_labels'): p_auroc=0.0 , p_auprc=0.0
+('simsiam_limited_labeled', 'ppg_only_baseline_limited_labeled'): p_auroc=0.0 , p_auprc=0.0
+('deepmi_limited_labels', 'ppg_only_baseline_limited_labeled'): p_auroc=0.0 , p_auprc=4.1236446172850654e-20
+ECG LIMITED
+[('simsiam_limited_labeled', 'deepmi_limited_labels'), ('simsiam_limited_labeled', 'ecg_only_baseline_limited_labeled'), ('deepmi_limited_labels', 'ecg_only_baseline_limited_labeled')]
+---------------------------------------------------------------
+data_simband_ecg_2400
+('simsiam_limited_labeled', 'deepmi_limited_labels'): p_auroc=0.0 , p_auprc=9.15576328903791e-127
+('simsiam_limited_labeled', 'ecg_only_baseline_limited_labeled'): p_auroc=0.0 , p_auprc=9.15576328903791e-127
+('deepmi_limited_labels', 'ecg_only_baseline_limited_labeled'): p_auroc=nan , p_auprc=nan
+---------------------------------------------------------------
+---------------------------------------------------------------
+data_ucla_ecg_2400
+('simsiam_limited_labeled', 'deepmi_limited_labels'): p_auroc=0.0 , p_auprc=0.0
+('simsiam_limited_labeled', 'ecg_only_baseline_limited_labeled'): p_auroc=0.0 , p_auprc=0.0
+('deepmi_limited_labels', 'ecg_only_baseline_limited_labeled'): p_auroc=3.945166669570336e-220 , p_auprc=1.854564925523601e-152
+---------------------------------------------------------------
+---------------------------------------------------------------

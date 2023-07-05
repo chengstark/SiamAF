@@ -1,0 +1,8 @@
+*.npy
+*.pt
+*.pth
+*.adibin
+/home/zguo30/ppg_ecg_proj/proposed/Sully_out_bad_qual/*
+*.out
+__pycache__/
+.ipynb_checkpoints/

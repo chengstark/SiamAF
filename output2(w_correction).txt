@@ -1,0 +1,15 @@
+ECG LIMITED
+[('simsiam_limited_labeled', 'deepmi_limited_labels'), ('simsiam_limited_labeled', 'ecg_only_baseline_limited_labeled'), ('deepmi_limited_labels', 'ecg_only_baseline_limited_labeled')]
+---------------------------------------------------------------
+data_simband_ecg_2400
+('simsiam_limited_labeled', 'deepmi_limited_labels'): p_auroc=0.0 , p_auprc=9.15576328903791e-127
+('simsiam_limited_labeled', 'ecg_only_baseline_limited_labeled'): p_auroc=0.0 , p_auprc=6.652593467207345e-180
+('deepmi_limited_labels', 'ecg_only_baseline_limited_labeled'): p_auroc=7.240720468309254e-115 , p_auprc=9.951774711370074e-219
+---------------------------------------------------------------
+---------------------------------------------------------------
+data_ucla_ecg_2400
+('simsiam_limited_labeled', 'deepmi_limited_labels'): p_auroc=0.0 , p_auprc=0.0
+('simsiam_limited_labeled', 'ecg_only_baseline_limited_labeled'): p_auroc=0.0 , p_auprc=0.0
+('deepmi_limited_labels', 'ecg_only_baseline_limited_labeled'): p_auroc=0.0 , p_auprc=0.0
+---------------------------------------------------------------
+---------------------------------------------------------------

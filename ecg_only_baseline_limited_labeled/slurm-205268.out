@@ -1,0 +1,47 @@
+JOB START
+Wed Apr 19 19:05:40 2023       
++-----------------------------------------------------------------------------+
+| NVIDIA-SMI 525.60.13    Driver Version: 525.60.13    CUDA Version: 12.0     |
+|-------------------------------+----------------------+----------------------+
+| GPU  Name        Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp  Perf  Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
+|                               |                      |               MIG M. |
+|===============================+======================+======================|
+|   0  Tesla T4            Off  | 00000000:04:00.0 Off |                    0 |
+| N/A   53C    P0    29W /  70W |      2MiB / 15360MiB |      5%      Default |
+|                               |                      |                  N/A |
++-------------------------------+----------------------+----------------------+
+                                                                               
++-----------------------------------------------------------------------------+
+| Processes:                                                                  |
+|  GPU   GI   CI        PID   Type   Process name                  GPU Memory |
+|        ID   ID                                                   Usage      |
+|=============================================================================|
+|  No running processes found                                                 |
++-----------------------------------------------------------------------------+
+torch.Size([3, 384]) torch.Size([3, 2])
+data_simband_ecg_2400
+/labs/hulab/Robust_learning_TESTDATA/data_simband_ecg_2400.npy
+/labs/hulab/Robust_learning_TESTDATA/label_simband.npy
+Traceback (most recent call last):
+  File "test_pipeline.py", line 150, in <module>
+    test_epoch(model, testloader, pair[0].split('.')[0], patient_info_path=pair[2] if len(pair)==3 else None)
+  File "test_pipeline.py", line 44, in test_epoch
+    _, PPG_out = PPG_model(PPG)
+  File "/opt/rh/rh-python36/root/usr/lib64/python3.6/site-packages/torch/nn/modules/module.py", line 727, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "/home/zguo30/ppg_ecg_proj/ecg_only_baseline_limited_labeled/resnet1d.py", line 83, in forward
+    out = self.stage0(out)
+  File "/opt/rh/rh-python36/root/usr/lib64/python3.6/site-packages/torch/nn/modules/module.py", line 727, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "/opt/rh/rh-python36/root/usr/lib64/python3.6/site-packages/torch/nn/modules/container.py", line 117, in forward
+    input = module(input)
+  File "/opt/rh/rh-python36/root/usr/lib64/python3.6/site-packages/torch/nn/modules/module.py", line 727, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "/home/zguo30/ppg_ecg_proj/ecg_only_baseline_limited_labeled/resnet1d.py", line 40, in forward
+    out = self.relu1(self.bn1(self.conv1(out)))
+  File "/opt/rh/rh-python36/root/usr/lib64/python3.6/site-packages/torch/nn/modules/module.py", line 727, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "/opt/rh/rh-python36/root/usr/lib64/python3.6/site-packages/torch/nn/modules/conv.py", line 259, in forward
+    self.padding, self.dilation, self.groups)
+TypeError: conv1d(): argument 'padding' (position 5) must be tuple of ints, not str
