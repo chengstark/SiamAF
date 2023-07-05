@@ -14,6 +14,8 @@ Jump to section:
 
 ## Model details
 
+![alt text](https://github.com/chengstark/SiamAF/blob/870a1e763aa7f84ae76db0b57e79672fb6b5fadf/ppgecgjoinarch.png)
+
 SiamAF is a siamese network, designed to learn shared information from both ECG and PPG signals for the  atrial fibrillation (AF) detection. The model is trained on the Instituion A dataset, which contains automatically labeled time-synchronized ECG and PPG signals from bedside monitors. The model has two learning targets $\mathcal{L}_ {\textit{agree}}$ (unsupervised) and $\mathcal{L}_ {CE}$ (Cross-Entropy loss, supervised). Here $\mathcal{L}_ {\textit{agree}}$ defined as follwing:
 
 $$\mathcal{L}_{\textit{agree}}(x^{PPG}_i, x^{ECG}_i) =  - \frac{\left\langle q(z^{ECG}_i), z^{PPG}_i\right\rangle}{\left\|q(z^{ECG}_i)\right\|_{2} \cdot\left\|z^{PPG}_i\right\|_{2}} - \frac{\left\langle q(z^{PPG}_i), z^{ECG}_i\right\rangle}{\left\|q(z^{PPG}_i)\right\|_{2} \cdot\left\|z^{ECG}_i\right\|_{2}}.$$
