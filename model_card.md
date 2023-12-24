@@ -1,5 +1,7 @@
 # Model card for "SiamAF"
 
+Under Review - Preprint: https://arxiv.org/abs/2310.09203
+
 Jump to section:
 
 - [Model details](#model-details)
