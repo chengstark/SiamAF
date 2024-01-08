@@ -1,6 +1,6 @@
 # Model card for "SiamAF"
 
-Under Review - Preprint: https://arxiv.org/abs/2310.09203
+Manuscript Under Review - Preprint: https://arxiv.org/abs/2310.09203
 
 Jump to section:
 
@@ -150,3 +150,18 @@ This model is evalauted with both AUROC and AUPRC scores with 95% confidence int
 ## Limitations and bias
 
 The training labels are auto generated and may contain noise, there is no other inherent limitation or bias to this model.
+
+## BibTeX Citation
+
+If you use the SiamAF model or part of this repository in a scientific publication, please use the following citations:
+
+```
+@misc{guo2023siamaf,
+      title={SiamAF: Learning Shared Information from ECG and PPG Signals for Robust Atrial Fibrillation Detection}, 
+      author={Zhicheng Guo and Cheng Ding and Duc H. Do and Amit Shah and Randall J. Lee and Xiao Hu and Cynthia Rudin},
+      year={2023},
+      eprint={2310.09203},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG}
+}
+```
